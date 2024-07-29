@@ -10,7 +10,7 @@ export function cleanTask(glob: string | string[]): gulp.TaskFunction {
 }
 
 export function execTask(binPath: string, args: string[], env: {} = {}): gulp.TaskFunction {
-  return (done: (err?: string) => void) => {
+  return (done: (err?: any) => void) => {
     // https://github.com/angular/angular-cli/issues/10922
     // tslint:disable-next-line:no-any
     (process.stdout as any)._handle.setBlocking(true);
