@@ -20,3 +20,15 @@ npm publish -registry http://<ip>:<port>/repository/npm-host/
 ## notes 
 
 后续如果要修改，需要修改 components/package.json 里的版本，注意不要和ng-zorro重复
+
+如果安装不上去尝试 清除npm 缓存
+
+```
+
+npm cache clean --force
+
+# 检查当前是不是已经拿到了自己patch的版本
+
+npm view ng-zorro-antd versions
+
+```
